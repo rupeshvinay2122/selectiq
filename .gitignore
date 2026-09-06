@@ -1,0 +1,46 @@
+# Python
+.venv/
+venv/
+ENV/
+__pycache__/
+*.py[cod]
+*$py.class
+*.pytest_cache/
+.coverage
+htmlcov/
+
+# Large Datasets (>100MB cannot be pushed to GitHub)
+data/*.jsonl
+*.jsonl
+*.csv
+*.tsv
+*.parquet
+
+# C++ Build Artifacts
+*.exe
+*.o
+*.obj
+*.dll
+*.so
+*.dylib
+*.a
+*.lib
+*.pdb
+*.ilk
+build/
+bin/
+out/
+
+# Environment and IDEs
+.env
+.env.*
+!.env.example
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+
+# Standalone C++ Project Repo
+vegakv/
