@@ -44,3 +44,8 @@ Thumbs.db
 
 # Standalone C++ Project Repo
 vegakv/
+
+# Local Personal Resume (Private - Never commit)
+resume.*
+resume_*
+

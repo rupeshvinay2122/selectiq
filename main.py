@@ -70,6 +70,14 @@ def root():
     """Serves the SelectIQ Candidate Discovery UI."""
     return FileResponse("static/index.html")
 
+@app.get("/resume", response_class=FileResponse, tags=["General"])
+def get_resume():
+    """Serves the printable 1-page SDE resume locally if present."""
+    resume_path = Path("resume.html")
+    if resume_path.exists():
+        return FileResponse(resume_path)
+    raise HTTPException(status_code=404, detail="Resume not found locally")
+
 @app.get("/api/v1/info", tags=["General"])
 def api_info():
     """Returns JSON metadata about the candidate microservice."""
