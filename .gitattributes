@@ -1,0 +1,3 @@
+﻿# Override GitHub language detection so SelectIQ is classified as Python
+static/* linguist-vendored
+*.html linguist-detectable=false
